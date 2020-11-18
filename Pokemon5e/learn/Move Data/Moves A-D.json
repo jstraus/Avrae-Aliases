@@ -25,6 +25,8 @@
       "proper": true,
       "_v": 2
     },
+      {"type":"target","meta":[],"target":"self","effects":[{"type":"condition","meta":[],"condition":"{lastAttackDidHit}","onTrue":[{"type":"damage","meta":[],"damage":"-({lastDamage}/2)[Healing]","overheal":false}],"onFalse":[],"errorBehaviour":"neither"}]}]
+    },
     "attack": "proficiencyBonus+max(SMO,DMO)",
     "damage": {
       "1": "1d4+{max(SMO,DMO)}",
@@ -4380,6 +4382,8 @@
       "_v": 2,
       "proper": false,
       "verb": null
+    },
+    {"type":"target","meta":[],"target":"self","effects":[{"type":"condition","meta":[],"condition":"{lastAttackDidHit}","onTrue":[{"type":"damage","meta":[],"damage":"-({lastDamage}/2)[Healing]","overheal":false}],"onFalse":[],"errorBehaviour":"neither"}]}]
     },
     "attack": "proficiencyBonus+max(SMO,DMO)",
     "damage": {
